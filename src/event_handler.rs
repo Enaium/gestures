@@ -110,7 +110,7 @@ impl EventHandler {
             config,
             event: Gesture::None,
             cache: GestureCache::new(),
-            throttle: ThrottleState::new(60),
+            throttle: ThrottleState::new(180),
         };
         handler.update_cache();
         handler
